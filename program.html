@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,21 +14,13 @@
   <!-- Custom CSS -->
   <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
   <script src="js/jquery.min.js"></script>
+  <script src="js/script.js"></script>
 </head>
+
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span>
-          <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <a class="titulo" href="#" style="color: #990100">CASSW-RS + YPW 2021 </a> 
-        </div>
-      <div class="navbar-collapse collapse">
-       <ul class="nav navbar-nav navbar-center"><li><a href="index.html">Home</a></li><li class="active"><a href="program.html">Program</a></li><li><a href="call-for-posters.html">Call for Posters</a></li><li><a href="young.html">Young Professionals </a></li><li><a href="registration.html">Registration</a></li><li><a href="cass.html">IEEE/CASS Membership</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <!-- navbar -->
+  <div w3-include-html="elements/navbar.html"></div>
+  <script> setActive("nav-program");</script>
   <!-- Slider -->
   <div id="section_header2">
     <div class="container">
@@ -61,7 +54,117 @@
               </tr>
             </thead>
             <tbody>
-              <tr><td>Hour</td><td>Speaker</td></tr><tr><td>09:10</td><td>Opening Session</td></tr><tr><td>09:30</td><td><b>Felipe Rosa</b> - Using Virtual Platforms accelerate research and software development<br> ARM, UK<br> <a class="page-scroll" href="#scroll2"><span style="color:#39C0F0">Abstract & Short Bio</span></a></td></tr><tr><td>10:30</td><td>Break</td></tr><tr><td>10:45</td><td><b>Hussam Amrouch</b> - Fighting Temperature: The Unseen Enemy for Neural Processing Units<br> University of Stuttgart, Germany<br> <a class="page-scroll" href="#scroll4"><span style="color:#39C0F0">Abstract & Short Bio</span></a></td></tr><tr><td>11:45</td><td>Lunch</td></tr><tr><td>13:30</td><td><b>Jorge Castro-Godínez</b> - Accuracy for Energy? Approximate Computing to the Rescue. A Brief Journey through the Promises and Progress of this Design Paradigm <br> Tecnológico de Costa Rica, Costa Rica<br> <a class="page-scroll" href="#scroll6"><span style="color:#39C0F0">Abstract & Short Bio</span></a></td></tr><tr><td>14:30</td><td>Break</td></tr><tr><td>14:45</td><td><b>Jimmy Tarrillo</b> - Development of critical embedded systems for Andean areas applications<br> Universidad de Ingeniería y Tecnología, Peru<br> <a class="page-scroll" href="#scroll8"><span style="color:#39C0F0">Abstract & Short Bio</span></a></td></tr><tr><td>16:00</td><td><b>Session 1 Chairs: Jorge Castro-Godínez (TEC - Costa Rica) and Leandro Rocha (IFRS)</b><br> 16:00 to 16:50 - S1 Video presentations<br> 16:50 to 17:20 - S1 Questions and Answers<br><hr>On the Constant Parameter Approximation for Boosting Efficiency of Random Forest Inference Engines<br>Brunno Abreu, Guilherme Paim, Mateus Grellert and Sergio Bampi<br>UFRGS, UFSC<br><hr>Experimental Evaluation of FPGA Countermeasures Against SCA<br>Vinicius Renato Rocha Geraldo, Mateus Terribele Leme, Israel Lopes, Guilherme Paim, Sergio Bampi and Vinícius Valduga de Almeida Camargo<br>UFPel, UFRGS<br><hr>A Two-Level Approximate Logic Synthesis Method Combining Cube Insertion and Removal<br>Gabriel Ammes, Walter Lau Neto, Paulo F. Butzen, Pierre-Emmanuel Gaillardon and Renato Ribas<br>UFRGS, University of Utah<br><hr>An Approximate Functions Generation Method to ATMR Architecture<br>Guilherme Manske, Paulo Francisco Butzen, Leomar Soares da Rosa Junior<br>UFPel, UFRGS<br><hr>Exploring Perceptron Architectures for Power-Efficient Neural Networks<br>Luis Antonio Simon, Mateus Grellert and Brunno Abreu<br>UFSC,UFRGS<br><hr>The Impact of Parallel Designs on FPGA Switch Virtualization Architecture<br>Leonardo Reinehr Gobatto, Mateus Tirone, Weverton Cordeiro and José Rodrigo Azambuja<br>UFRGS<br><hr>Quality and Complexity Assessment of Learning-Based Image Compression Solutions<br>Joao Dick, Brunno Abreu, Mateus Grellert and Sergio Bampi<br>UFRGS, UFSC<br><hr>Adding to Qiskit Support to Simulate Quantum Algorithms in FPGA<br>João Vitor Da Silva Silveira, Calebe Conceicao and Gustavo Groeff<br>IFSUL<br><hr>An Exploration of Approximate Computing Comparators in Decision Tree Applications<br>Pedro Silva, Mateus Grellert and Cristina Meinhardt<br>UFSC<br><hr><b>Session 2 Chairs: Daniel Palomino (UFPel) and Felipe Todeschini Bortolon (Silvaco)</b><br> 17:30 to 18:20  - S2 Video presentations<br> 18:20 to 18:50 - S2 Questions and Answers<br><hr>Boosting the Efficiency of the Harmonics Elimination VLSI Architecture by Arithmetic Approximations<br>Patricia da Costa, Pedro T. L. Pereira, Eduardo da Costa, Guilherme Paim and Sergio Bampi<br>UFRGS, UCPel<br><hr>An Energy-Efficient Haar Wavelet Transform Architecture for Respiratory Signal Processing<br>Morgana Macedo Azevedo da Rosa, Henrique Seidel, Eduardo Costa, Sergio Almeida, Guilherme Paim and Segio Bampi<br>UFRGS, UCPel<br><hr>High-Throughput Architecture for the AV1 Arithmetic Encoder with Open-Source EDA Tools<br>Tulio Pereira Bitencourt, Fábio Luís Livi Ramos and Sergio Bampi<br>UFRGS, Unipampa<br><hr>Interpolation Filter Design Using Multiplierless Constant Multiplication<br>Bruna S. Nagai, Daiane Freitas, Guilherme Corrêa and Mateus Grellert<br>UFPel, UFSC<br><hr>Architectural Exploration for Energy-Efficient Fixed-Point Kalman Filter VLSI Design<br>Pedro Pereiro, Guilherme Paim, Patricia Ucker, Eduardo Da Costa, Sérgio Almeida and Sergio Bampi<br>UFRGS, UCPel<br><hr>Exploring Approximate computing for the accuracy-configurable 2D gaussian filter<br>Talita Borges, Leonardo Soares, Cristina Meinhardt and Paulo Butzen<br>UFRGS, UFSC, IFRS<br><hr>Fixed-Point NLMS and IPNLMS Biomedical Hardware Architectures for Fetal Signal Processing<br>Patricia da Costa, Guilherme Paim, Eduardo Costa, Sergio Bampi, Sergio Almeida and Leandro Rocha<br>UFRGS, UCPel<br><hr>High-Throughput Hardware Architecture for Sharp Interpolation Filters of AV1 Codec Using MCM<br>Daiane Freitas, Cláudio Diniz, Mateus Grellert and Guilherme Corrêa<br>UFPel, UFSC<br><hr>A Fractional Interpolation Dedicated Hardware for VVC Motion Estimation<br>Rafael da Silva, Mateus Grellert and Ricardo Reis<br>UFRGS, UFSC<br><hr>Complexity and Partitioning Analysis of the AV1 encoder<br>Icaro Siqueira, Alexandra Zimpeck and Mateus Grellert<br>UCPel, UFSC<br><hr>Interconnection Systems for Systems on Chip<br>Laura García, Guillermo González and Remberto Sandoval<br>Universidad Autónoma de Zacatecas, Mexico<br><hr><br><br><br><hr><br><br><br><hr><br><br><br><hr><br><br><br><hr><br><br><br><hr></td></td></tr><tr><td></td><td></td></tr>            </tbody>
+              <tr>
+                <td>Hour</td>
+                <td>Speaker</td>
+              </tr>
+              <tr>
+                <td>09:10</td>
+                <td>Opening Session</td>
+              </tr>
+              <tr>
+                <td>09:30</td>
+                <td><b>Felipe Rosa</b> - Using Virtual Platforms accelerate research and software development<br> ARM,
+                  UK<br> <a class="page-scroll" href="#scroll2"><span style="color:#39C0F0">Abstract & Short
+                      Bio</span></a></td>
+              </tr>
+              <tr>
+                <td>10:30</td>
+                <td>Break</td>
+              </tr>
+              <tr>
+                <td>10:45</td>
+                <td><b>Hussam Amrouch</b> - Fighting Temperature: The Unseen Enemy for Neural Processing Units<br>
+                  University of Stuttgart, Germany<br> <a class="page-scroll" href="#scroll4"><span
+                      style="color:#39C0F0">Abstract & Short Bio</span></a></td>
+              </tr>
+              <tr>
+                <td>11:45</td>
+                <td>Lunch</td>
+              </tr>
+              <tr>
+                <td>13:30</td>
+                <td><b>Jorge Castro-Godínez</b> - Accuracy for Energy? Approximate Computing to the Rescue. A Brief
+                  Journey through the Promises and Progress of this Design Paradigm <br> Tecnológico de Costa Rica,
+                  Costa Rica<br> <a class="page-scroll" href="#scroll6"><span style="color:#39C0F0">Abstract & Short
+                      Bio</span></a></td>
+              </tr>
+              <tr>
+                <td>14:30</td>
+                <td>Break</td>
+              </tr>
+              <tr>
+                <td>14:45</td>
+                <td><b>Jimmy Tarrillo</b> - Development of critical embedded systems for Andean areas applications<br>
+                  Universidad de Ingeniería y Tecnología, Peru<br> <a class="page-scroll" href="#scroll8"><span
+                      style="color:#39C0F0">Abstract & Short Bio</span></a></td>
+              </tr>
+              <tr>
+                <td>16:00</td>
+                <td><b>Session 1 Chairs: Jorge Castro-Godínez (TEC - Costa Rica) and Leandro Rocha (IFRS)</b><br> 16:00
+                  to 16:50 - S1 Video presentations<br> 16:50 to 17:20 - S1 Questions and Answers<br>
+                  <hr>On the Constant Parameter Approximation for Boosting Efficiency of Random Forest Inference
+                  Engines<br>Brunno Abreu, Guilherme Paim, Mateus Grellert and Sergio Bampi<br>UFRGS, UFSC<br>
+                  <hr>Experimental Evaluation of FPGA Countermeasures Against SCA<br>Vinicius Renato Rocha Geraldo,
+                  Mateus Terribele Leme, Israel Lopes, Guilherme Paim, Sergio Bampi and Vinícius Valduga de Almeida
+                  Camargo<br>UFPel, UFRGS<br>
+                  <hr>A Two-Level Approximate Logic Synthesis Method Combining Cube Insertion and Removal<br>Gabriel
+                  Ammes, Walter Lau Neto, Paulo F. Butzen, Pierre-Emmanuel Gaillardon and Renato Ribas<br>UFRGS,
+                  University of Utah<br>
+                  <hr>An Approximate Functions Generation Method to ATMR Architecture<br>Guilherme Manske, Paulo
+                  Francisco Butzen, Leomar Soares da Rosa Junior<br>UFPel, UFRGS<br>
+                  <hr>Exploring Perceptron Architectures for Power-Efficient Neural Networks<br>Luis Antonio Simon,
+                  Mateus Grellert and Brunno Abreu<br>UFSC,UFRGS<br>
+                  <hr>The Impact of Parallel Designs on FPGA Switch Virtualization Architecture<br>Leonardo Reinehr
+                  Gobatto, Mateus Tirone, Weverton Cordeiro and José Rodrigo Azambuja<br>UFRGS<br>
+                  <hr>Quality and Complexity Assessment of Learning-Based Image Compression Solutions<br>Joao Dick,
+                  Brunno Abreu, Mateus Grellert and Sergio Bampi<br>UFRGS, UFSC<br>
+                  <hr>Adding to Qiskit Support to Simulate Quantum Algorithms in FPGA<br>João Vitor Da Silva Silveira,
+                  Calebe Conceicao and Gustavo Groeff<br>IFSUL<br>
+                  <hr>An Exploration of Approximate Computing Comparators in Decision Tree Applications<br>Pedro Silva,
+                  Mateus Grellert and Cristina Meinhardt<br>UFSC<br>
+                  <hr><b>Session 2 Chairs: Daniel Palomino (UFPel) and Felipe Todeschini Bortolon (Silvaco)</b><br>
+                  17:30 to 18:20 - S2 Video presentations<br> 18:20 to 18:50 - S2 Questions and Answers<br>
+                  <hr>Boosting the Efficiency of the Harmonics Elimination VLSI Architecture by Arithmetic
+                  Approximations<br>Patricia da Costa, Pedro T. L. Pereira, Eduardo da Costa, Guilherme Paim and Sergio
+                  Bampi<br>UFRGS, UCPel<br>
+                  <hr>An Energy-Efficient Haar Wavelet Transform Architecture for Respiratory Signal
+                  Processing<br>Morgana Macedo Azevedo da Rosa, Henrique Seidel, Eduardo Costa, Sergio Almeida,
+                  Guilherme Paim and Segio Bampi<br>UFRGS, UCPel<br>
+                  <hr>High-Throughput Architecture for the AV1 Arithmetic Encoder with Open-Source EDA Tools<br>Tulio
+                  Pereira Bitencourt, Fábio Luís Livi Ramos and Sergio Bampi<br>UFRGS, Unipampa<br>
+                  <hr>Interpolation Filter Design Using Multiplierless Constant Multiplication<br>Bruna S. Nagai, Daiane
+                  Freitas, Guilherme Corrêa and Mateus Grellert<br>UFPel, UFSC<br>
+                  <hr>Architectural Exploration for Energy-Efficient Fixed-Point Kalman Filter VLSI Design<br>Pedro
+                  Pereiro, Guilherme Paim, Patricia Ucker, Eduardo Da Costa, Sérgio Almeida and Sergio Bampi<br>UFRGS,
+                  UCPel<br>
+                  <hr>Exploring Approximate computing for the accuracy-configurable 2D gaussian filter<br>Talita Borges,
+                  Leonardo Soares, Cristina Meinhardt and Paulo Butzen<br>UFRGS, UFSC, IFRS<br>
+                  <hr>Fixed-Point NLMS and IPNLMS Biomedical Hardware Architectures for Fetal Signal
+                  Processing<br>Patricia da Costa, Guilherme Paim, Eduardo Costa, Sergio Bampi, Sergio Almeida and
+                  Leandro Rocha<br>UFRGS, UCPel<br>
+                  <hr>High-Throughput Hardware Architecture for Sharp Interpolation Filters of AV1 Codec Using
+                  MCM<br>Daiane Freitas, Cláudio Diniz, Mateus Grellert and Guilherme Corrêa<br>UFPel, UFSC<br>
+                  <hr>A Fractional Interpolation Dedicated Hardware for VVC Motion Estimation<br>Rafael da Silva, Mateus
+                  Grellert and Ricardo Reis<br>UFRGS, UFSC<br>
+                  <hr>Complexity and Partitioning Analysis of the AV1 encoder<br>Icaro Siqueira, Alexandra Zimpeck and
+                  Mateus Grellert<br>UCPel, UFSC<br>
+                  <hr>Interconnection Systems for Systems on Chip<br>Laura García, Guillermo González and Remberto
+                  Sandoval<br>Universidad Autónoma de Zacatecas, Mexico<br>
+                  <hr><br><br><br>
+                  <hr><br><br><br>
+                  <hr><br><br><br>
+                  <hr><br><br><br>
+                  <hr><br><br><br>
+                  <hr>
+                </td>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
           </table>
         </div>
         <br>
@@ -80,7 +183,104 @@
               </tr>
             </thead>
             <tbody>
-              <tr><td>Hour</td><td>Speaker</td></tr><tr><td>09:30</td><td><b>Felipe França</b> - Weightless Neural Networks: LOOK MUM! NO WEIGHTS!<br> Universidade Federal do Rio de Janeiro, Brazil<br> <a class="page-scroll" href="#scroll21"><span style="color:#39C0F0">Abstract & Short Bio</span></a></td></tr><tr><td>10:30</td><td>Break</td></tr><tr><td>10:45</td><td><b>Eby G. Friedman</b> - Distributed On-Chip Power Delivery for Heterogeneous Nanoscale Integrated Systems<br> University of Rochester, USA<br> <a class="page-scroll" href="#scroll23"><span style="color:#39C0F0">Abstract & Short Bio</span></a></td></tr><tr><td>11:45</td><td>Lunch</td></tr><tr><td>13:30</td><td><b>Jorge Tonfat</b> - FPGA Space Applications<br> Space Research Institute of the Austrian Academy of Sciences<br> <a class="page-scroll" href="#scroll25"><span style="color:#39C0F0">Abstract & Short Bio</span></a></td></tr><tr><td>14:30</td><td>Break</td></tr><tr><td>14:45</td><td><b>Arjuna Madanayake</b> - An Emerging Age of Analog-Accelerated Computing<br> Florida International University, USA<br> <a class="page-scroll" href="#scroll27"><span style="color:#39C0F0">Abstract & Short Bio</span></a></td></tr><tr><td>16:00</td><td><b>Session 3 Chairs: Alessandro Girardi (UNIPAMPA)<br> </b><br> 16:00 to 16:50 - 16:00 to 16:50 - S3 Video presentations<br><hr>Demonstration of GaAs1-xSbx – FinFET for Label Free Biosensing<br>Ankit Dixit, Dip Samajdar and Navjeet Bagga<br>IIITDM Jabalpur (India)<br><hr>Demonstration of Ferroelectric Spacer in Negative Capacitance FinFET<br>Vibhuti Chauhan, Dip Prakash Samajdar and Navjeet Bagga<br>IIITDM Jabalpur (India)<br><hr>Positive Feedback Bulk Effect on a Floating Inverter Preamplifier for Low-Voltage Dynamic Comparator<br>Bruno Canal, Hamilton Klimach, Sergio Bampi and Tiago Balen<br>UFRGS<br><hr>Automated Design of a Low Power Miller OTA Circuit<br>Ramiro G. S. Viana and Thiago H. Both<br>UFPel<br><hr>Impact of Bias Temperature Instability on a CMOS Ring Oscillator<br>Caroline Garcia and Thiago H. Both<br>UFPel<br><hr>Sensitivity of FinFET Full-Adders to PVT Variations and Evaluation of a Mitigation Strategy<br>Gerson Andrade, Eduardo Costa, Alexandra Zimpeck and Ricardo Reis<br>UCPel, UFRGS<br><hr>A 0.4-V 8-bit R-2R DAC for Low-Power Applications<br>Martina Rodrigues and Paulo Aguirre<br>Unipampa<br><hr>Electrical Behavior Prediction Of An Inverter Using Machine Learning Algorithms<br>Gabriel Jacinto, Mateus Grellert and Cristina Meinhardt<br>UFSC<br><hr>The Relation Between Entropy of a Cell and Variability of Power, Delay, and Transients<br>Elias de Almeida Ramos and Ricardo Reis<br>UFRGS<br><hr><b>Session 4 Chairs: Felipe Rosa (ARM - UK)</b><br> 17:30 to 18:20 - S4 Video presentations<br> 18:20 to 18:50 - S4 Questions and Answers <br><hr>On the Resiliency of NC-FinFET SRAMs against Variation: MFIS Structure<br>Aniket Gupta, Nitanshu Chauhan, Om Prakash and Hussam Amrouch<br>NIT Uttarakhand (India), KIT (Germany), University of Stuttgart (Germany)<br><hr>Soft Errors in Negative Capacitance FDSOI SRAMs<br>Govind Bajpai, Aniket Gupta, Om Prakash, Yogesh S. Chauhan and Hussam Amrouch<br>NIT Uttarakhand (India), KIT (Germany), IITK (India), University of Stuttgart (Germany)<br><hr>Procedure for estimating the radiation susceptibility of combinational circuits<br>Clayton Farias and Paulo F. Butzen<br>UFRGS<br><hr>Evaluation of Critical Charge in FDSOI SRAM Cells<br>Cleiton M. Marques, Cristina Meinhardt and Paulo F. Butzen<br>UFRGS, UFSC<br><hr>The Impact of Logic Gates Susceptibility in Overall Circuit Reliability Analysis<br>Matheus Pontes, Rafael Schvittz, Leomar S. Rosa Junior and Paulo F. Butzen<br>UFPel, UFRGS<br><hr>A Straightforward Procedure to Multirow Circuits Legalization<br>Jorge Ferreira, Paulo Butzen and Ricardo Reis<br>UFRGS<br><hr>A Placement-Based Predictor For DRVs Considering Advanced Routing Constraints<br>Sheiny Almeida, José Luís Güntzel, Laleh Behjat and Cristina Meinhardt<br>UFSC<br><hr>A Framework for Assessing Intrinsic Fault Resiliency of HLS Designs<br>Pedro Henrique Kopper and Gabriel Nazar<br>UFRGS<br><hr>A New Approach for Automatic Layout Generation: ALTRAN<br>Germano Girondi, Vitor Hugo Fuerstenau Maciel, Elias Ramos and Ricardo Reis<br>UFRGS<br><hr>SET Mitigation on Mirror Full Adder at 7 nm node<br>Rafael Neves de Mello Oliveira, Fábio G. R. G. da Silva, Ricardo Reis and Cristina Meinhardt<br>UFSC, UFRGS<br><hr>Applying Lightweight Soft Error Mitigation Techniques to Embedded Mixed Precision Deep Neural Networks<br>Geancarlo Abich, Luciano Ost and Ricardo Reis<br>UFRGS, Loughborough University<br><hr><br><br><br><hr></td></td></tr><tr><td></td><td></td></tr>            </tbody>
+              <tr>
+                <td>Hour</td>
+                <td>Speaker</td>
+              </tr>
+              <tr>
+                <td>09:30</td>
+                <td><b>Felipe França</b> - Weightless Neural Networks: LOOK MUM! NO WEIGHTS!<br> Universidade Federal do
+                  Rio de Janeiro, Brazil<br> <a class="page-scroll" href="#scroll21"><span
+                      style="color:#39C0F0">Abstract & Short Bio</span></a></td>
+              </tr>
+              <tr>
+                <td>10:30</td>
+                <td>Break</td>
+              </tr>
+              <tr>
+                <td>10:45</td>
+                <td><b>Eby G. Friedman</b> - Distributed On-Chip Power Delivery for Heterogeneous Nanoscale Integrated
+                  Systems<br> University of Rochester, USA<br> <a class="page-scroll" href="#scroll23"><span
+                      style="color:#39C0F0">Abstract & Short Bio</span></a></td>
+              </tr>
+              <tr>
+                <td>11:45</td>
+                <td>Lunch</td>
+              </tr>
+              <tr>
+                <td>13:30</td>
+                <td><b>Jorge Tonfat</b> - FPGA Space Applications<br> Space Research Institute of the Austrian Academy
+                  of Sciences<br> <a class="page-scroll" href="#scroll25"><span style="color:#39C0F0">Abstract & Short
+                      Bio</span></a></td>
+              </tr>
+              <tr>
+                <td>14:30</td>
+                <td>Break</td>
+              </tr>
+              <tr>
+                <td>14:45</td>
+                <td><b>Arjuna Madanayake</b> - An Emerging Age of Analog-Accelerated Computing<br> Florida International
+                  University, USA<br> <a class="page-scroll" href="#scroll27"><span style="color:#39C0F0">Abstract &
+                      Short Bio</span></a></td>
+              </tr>
+              <tr>
+                <td>16:00</td>
+                <td><b>Session 3 Chairs: Alessandro Girardi (UNIPAMPA)<br> </b><br> 16:00 to 16:50 - 16:00 to 16:50 - S3
+                  Video presentations<br>
+                  <hr>Demonstration of GaAs1-xSbx – FinFET for Label Free Biosensing<br>Ankit Dixit, Dip Samajdar and
+                  Navjeet Bagga<br>IIITDM Jabalpur (India)<br>
+                  <hr>Demonstration of Ferroelectric Spacer in Negative Capacitance FinFET<br>Vibhuti Chauhan, Dip
+                  Prakash Samajdar and Navjeet Bagga<br>IIITDM Jabalpur (India)<br>
+                  <hr>Positive Feedback Bulk Effect on a Floating Inverter Preamplifier for Low-Voltage Dynamic
+                  Comparator<br>Bruno Canal, Hamilton Klimach, Sergio Bampi and Tiago Balen<br>UFRGS<br>
+                  <hr>Automated Design of a Low Power Miller OTA Circuit<br>Ramiro G. S. Viana and Thiago H.
+                  Both<br>UFPel<br>
+                  <hr>Impact of Bias Temperature Instability on a CMOS Ring Oscillator<br>Caroline Garcia and Thiago H.
+                  Both<br>UFPel<br>
+                  <hr>Sensitivity of FinFET Full-Adders to PVT Variations and Evaluation of a Mitigation
+                  Strategy<br>Gerson Andrade, Eduardo Costa, Alexandra Zimpeck and Ricardo Reis<br>UCPel, UFRGS<br>
+                  <hr>A 0.4-V 8-bit R-2R DAC for Low-Power Applications<br>Martina Rodrigues and Paulo
+                  Aguirre<br>Unipampa<br>
+                  <hr>Electrical Behavior Prediction Of An Inverter Using Machine Learning Algorithms<br>Gabriel
+                  Jacinto, Mateus Grellert and Cristina Meinhardt<br>UFSC<br>
+                  <hr>The Relation Between Entropy of a Cell and Variability of Power, Delay, and Transients<br>Elias de
+                  Almeida Ramos and Ricardo Reis<br>UFRGS<br>
+                  <hr><b>Session 4 Chairs: Felipe Rosa (ARM - UK)</b><br> 17:30 to 18:20 - S4 Video presentations<br>
+                  18:20 to 18:50 - S4 Questions and Answers <br>
+                  <hr>On the Resiliency of NC-FinFET SRAMs against Variation: MFIS Structure<br>Aniket Gupta, Nitanshu
+                  Chauhan, Om Prakash and Hussam Amrouch<br>NIT Uttarakhand (India), KIT (Germany), University of
+                  Stuttgart (Germany)<br>
+                  <hr>Soft Errors in Negative Capacitance FDSOI SRAMs<br>Govind Bajpai, Aniket Gupta, Om Prakash, Yogesh
+                  S. Chauhan and Hussam Amrouch<br>NIT Uttarakhand (India), KIT (Germany), IITK (India), University of
+                  Stuttgart (Germany)<br>
+                  <hr>Procedure for estimating the radiation susceptibility of combinational circuits<br>Clayton Farias
+                  and Paulo F. Butzen<br>UFRGS<br>
+                  <hr>Evaluation of Critical Charge in FDSOI SRAM Cells<br>Cleiton M. Marques, Cristina Meinhardt and
+                  Paulo F. Butzen<br>UFRGS, UFSC<br>
+                  <hr>The Impact of Logic Gates Susceptibility in Overall Circuit Reliability Analysis<br>Matheus
+                  Pontes, Rafael Schvittz, Leomar S. Rosa Junior and Paulo F. Butzen<br>UFPel, UFRGS<br>
+                  <hr>A Straightforward Procedure to Multirow Circuits Legalization<br>Jorge Ferreira, Paulo Butzen and
+                  Ricardo Reis<br>UFRGS<br>
+                  <hr>A Placement-Based Predictor For DRVs Considering Advanced Routing Constraints<br>Sheiny Almeida,
+                  José Luís Güntzel, Laleh Behjat and Cristina Meinhardt<br>UFSC<br>
+                  <hr>A Framework for Assessing Intrinsic Fault Resiliency of HLS Designs<br>Pedro Henrique Kopper and
+                  Gabriel Nazar<br>UFRGS<br>
+                  <hr>A New Approach for Automatic Layout Generation: ALTRAN<br>Germano Girondi, Vitor Hugo Fuerstenau
+                  Maciel, Elias Ramos and Ricardo Reis<br>UFRGS<br>
+                  <hr>SET Mitigation on Mirror Full Adder at 7 nm node<br>Rafael Neves de Mello Oliveira, Fábio G. R. G.
+                  da Silva, Ricardo Reis and Cristina Meinhardt<br>UFSC, UFRGS<br>
+                  <hr>Applying Lightweight Soft Error Mitigation Techniques to Embedded Mixed Precision Deep Neural
+                  Networks<br>Geancarlo Abich, Luciano Ost and Ricardo Reis<br>UFRGS, Loughborough University<br>
+                  <hr><br><br><br>
+                  <hr>
+                </td>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
           </table>
         </div>
         <br>
@@ -99,209 +299,442 @@
               </tr>
             </thead>
             <tbody>
-              <tr><td>Hour</td><td>Speaker</td></tr><tr><td>09:30</td><td><b>Yibo Fan</b> - XK265: An open source video codec IP core<br> Fudan University, China<br> <a class="page-scroll" href="#scroll31"><span style="color:#39C0F0">Abstract & Short Bio</span></a></td></tr><tr><td>10:30</td><td>Break</td></tr><tr><td>10:45</td><td><b>Helmut Graeb</b> - Circuit-Level Yield Analysis and Optimization – The Deterministic Way<br> TU Munich, Germany<br> <a class="page-scroll" href="#scroll33"><span style="color:#39C0F0">Abstract & Short Bio</span></a></td></tr><tr><td>11:45</td><td>Lunch</td></tr><tr><td>13:30</td><td>Young Professionals - Open Session</td></tr><tr><td>16:30</td><td>Closing Session</td></tr>            </tbody>
+              <tr>
+                <td>Hour</td>
+                <td>Speaker</td>
+              </tr>
+              <tr>
+                <td>09:30</td>
+                <td><b>Yibo Fan</b> - XK265: An open source video codec IP core<br> Fudan University, China<br> <a
+                    class="page-scroll" href="#scroll31"><span style="color:#39C0F0">Abstract & Short Bio</span></a>
+                </td>
+              </tr>
+              <tr>
+                <td>10:30</td>
+                <td>Break</td>
+              </tr>
+              <tr>
+                <td>10:45</td>
+                <td><b>Helmut Graeb</b> - Circuit-Level Yield Analysis and Optimization – The Deterministic Way<br> TU
+                  Munich, Germany<br> <a class="page-scroll" href="#scroll33"><span style="color:#39C0F0">Abstract &
+                      Short Bio</span></a></td>
+              </tr>
+              <tr>
+                <td>11:45</td>
+                <td>Lunch</td>
+              </tr>
+              <tr>
+                <td>13:30</td>
+                <td>Young Professionals - Open Session</td>
+              </tr>
+              <tr>
+                <td>16:30</td>
+                <td>Closing Session</td>
+              </tr>
+            </tbody>
           </table>
         </div>
-        
-      
 
-    <!-- What e do Section -->
-    <!-- About Section -->
-    <br>
-    <hr>
-    <hr>
-    <br>
-    <section id="scroll2" style="margin-bottom: 50px;">
-        <div class="container">
-        <div class="row">
-        <div class="col-lg-9"><h3> <span style="color:#39C0F0">Felipe Rosa - ARM, UK</span> <br>Using Virtual Platforms accelerate research and software development</h3> <p><b>Abstract:</b><br>Virtual platforms provide full-system emulation of hardware components and running at speeds comparable to the actual hardware. Thus, virtual platforms users can develop software or firmware flexibly, without a hardware target, and with deployment quality. The performance and the flexibility originate from just-in-time translation engines and high-level models (i.e., programmer's view). Consequently, microarchitectural components are largely abstracted or simplified. In this circumstance, understanding the trade-offs of virtual platforms is just as important as creating your applications or experiments. By carefully studying the target problem, it's possible to speed up investigations in several orders of magnitude without losing the correlation with actual hardware execution. 
-I try to leverage my eight years of working with virtual platforms through several different projects in this talk to explain trade-offs and use cases.</p><br> <p><b>Short Bio:</b><br>Felipe was born in Porto Alegre in the southernmost Brazilian state, Rio Grande do Sul. He holds a PhD in microelectronics and a Bachelor of Computer Engineering degree from the Federal University of Rio Grande do Sul (UFRGS). Felipe participated in the BRAFITEC, studying in the B.Eng., Microelectronic and Automation, July 2012 to July 2013, at Ecole Polytechnique Universitaire de Montpellier. In parallel, He was an undergraduate research intern at the Laboratoire d'Informatique, de Robotique et de Microélectronique de Montpellier. In 2015, he was accepted to a one-year exchange at the University of Leicester at the post-graduate level (Engineering Departement). He researched the reliability of many-core embedded systems using virtual platforms. Additionally, during this period, he worked as Software Engineer at Imperas Software Ltd, incorporating performance estimation tools in its commercial engine. Felipe is currently a senior modelling engineer at Arm Cambridge, UK. His main work project includes system interconnections (e.g., CMN600, CI700) and platform integration such as Total Compute FVP.</p><br> <p>Session Chair: Dr. Leandro M. G. Rocha (IFRS)</p><br> </div> <div class="col-lg-3"><img src='images/palestrantes/felipe_rosa.jpg' class='img-responsive' style='width:150px'> </div></div></div></section><section id="scroll4" style="margin-bottom: 50px;">
-        <div class="container">
-        <div class="row">
-        <div class="col-lg-9"><h3> <span style="color:#39C0F0">Hussam Amrouch - University of Stuttgart, Germany</span> <br>Fighting Temperature: The Unseen Enemy for Neural Processing Units</h3> <p><b>Abstract:</b><br>Neural processing units (NPUs) are becoming an integral part in all modern computing systems due to their substantial role in accelerating neural networks. In this talk, we will discuss the thermal challenges that NPUs bring, demonstrating how multiply-accumulate (MAC) arrays, which form the heart of any NPU, impose serious thermal bottlenecks to any on-chip systems due to their excessive power densities. We will also discuss how elevated temperatures severely degrade the reliability of on-chip memories, especially when it comes to emerging non-volatile memories, leading to bit errors in the neural network parameters (e.g., weights, activations, etc.). In this talk, we will also discuss: 1) the effectiveness of precision scaling and frequency scaling (FS) in temperature reductions for NPUs and 2) how advanced on-chip cooling using superlattice thin-film thermoelectric (TE) open doors for new tradeoffs between temperature, throughput, cooling cost, and inference accuracy in NPU chips.</p><br> <p><b>Short Bio:</b><br> Dr. Hussam Amrouch is a Junior Professor at the University of Stuttgart heading the Chair of Semiconductor Test and Reliability (STAR) as well as a Research Group Leader at the Karlsruhe Institute of Technology (KIT), Germany. He earned in 06.2015 his Ph.D. degree in Computer Science (Dr.-Ing.) from KIT, Germany with distinction (summa cum laude). After which, he has founded and led the “Dependable Hardware” research group at KIT. Dr. Amrouch has published so far 135+ multidisciplinary publications, including 52 journals, covering several major research areas across the computing stack (semiconductor physics, circuit design, computer architecture, and computer-aided design). His key research interests are emerging nanotechnologies and machine learning for CAD. Dr. Amrouch currently serves as Associate Editor in Integration, the VLSI Journal as well as a guest and reviewer Editor in Frontiers in Neuroscience.</p><br> <p>Session Chair: Dr. Sergio Bampi (UFRGS)</p><br> </div> <div class="col-lg-3"><img src='images/palestrantes/amrouch.jpg' class='img-responsive' style='width:150px'> </div></div></div></section><section id="scroll6" style="margin-bottom: 50px;">
-        <div class="container">
-        <div class="row">
-        <div class="col-lg-9"><h3> <span style="color:#39C0F0">Jorge Castro-Godínez - Tecnológico de Costa Rica, Costa Rica</span> <br>Accuracy for Energy? Approximate Computing to the Rescue. A Brief Journey through the Promises and Progress of this Design Paradigm </h3> <p><b>Abstract:</b><br>The need for energy efficiency across the entire computing spectrum, from the Internet-of-Things to the High-Performance Computing, is motivating the emergence of newer devices, architectures, and design techniques. In the last decade, approximate computing has appeared as a design paradigm for applications that present an inherent tolerance to errors in their computations. By reducing the accuracy of the results, energy savings can be achieved in many modern applications, from image and video processing to machine learning and scientific computing. In this presentation, we will briefly walk through the fundamentals of this paradigm and we will explore some of its promises and progress achieved so far.</p><br> <p><b>Short Bio:</b><br>Dr.-Ing. Jorge Castro-Godínez is currently an Assistant Professor at the School of Electronics Engineering, Costa Rica Institute of Technology. He was a scientist and PhD student at the Chair for Embedded Systems, Karlsruhe Institute of Technology, under the direction of Prof. Dr. Jörg Henkel, between 2015 and 2020. He received his Licenciatura (5-year engineering degree) and M.Sc. in Electronics Engineering from the Costa Rica Institute of Technology, in 2011 and 2014, respectively. Prior, he worked as Embedded Systems Engineer at Canam-Technology Inc (2010-2012). He was also a Research Assistant at the Signal and Image Processing Lab, Costa Rica Institute of Technology, and took part in an industry-joint research and development project with Bounce Imaging (2012-2014). His primary research interest is in energy-efficient computing across the different abstraction layers, with a particular interest on approximate computing and machine learning on edge computing.</p><br> <p>Session Chair: Dr. Leonardo B. Soares (IFRS)</p><br> </div> <div class="col-lg-3"><img src='images/palestrantes/jorge_castro.jpg' class='img-responsive' style='width:150px'> </div></div></div></section><section id="scroll8" style="margin-bottom: 50px;">
-        <div class="container">
-        <div class="row">
-        <div class="col-lg-9"><h3> <span style="color:#39C0F0">Jimmy Tarrillo - Universidad de Ingeniería y Tecnología, Peru</span> <br>Development of critical embedded systems for Andean areas applications</h3> <p><b>Abstract:</b><br>The development of embedded systems for applications in remote Andean areas presents special challenges. For example, the difficulty of access, the effects of non-ionizing radiation, and the lack of a power grid make the design and construction of such systems consider the use of fault tolerance and low power consumption techniques. This presentation shows some critical embedded systems projects aimed to work in remote areas of the Andes developed by undergraduate students.</p><br> <p><b>Short Bio:</b><br>Dr. Jimmy Tarrillo is a professor at the Electrical Engineering department of Universidad de Ingenieria y Tecnologia (Peru). He received the Electrical Engineer degree from Pontificia Universidad Catolica del Peru (Peru) in 2002, the Master degree in Electrical Engineering from Pontificia Universidade Católica do Rio Grande do Sul (Brazil) in 2009, and Ph.D. degree in Computer Science from Federal University of Rio Grande do Sul (Brazil) in 2014. Additionally, he worked at Antwerp Space (Belgium) developing a soft error injector platform for SRAM- FPGAs. His research interests include embedded systems, soft error mitigation techniques, and low power consumption on FPGAs.</p><br> <p>Session Chair: Dra. Fernanda Kastensmidt (UFRGS)</p><br> </div> <div class="col-lg-3"><img src='images/palestrantes/jimmy.jpg' class='img-responsive' style='width:150px'> </div></div></div></section>    <section id="scroll21" style="margin-bottom: 50px;">
-          <div class="container">
-          <div class="row">
-          <div class="col-lg-9"><h3> <span style="color:#39C0F0">Felipe França - Universidade Federal do Rio de Janeiro, Brazil</span> <br>Weightless Neural Networks: LOOK MUM! NO WEIGHTS!</h3> <p><b>Abstract:</b><br>Mainstream artificial neural network models are based on weighted-sum-and-threshold artificial neurons, as the pioneering Threshold Logic Unit, of McCullogh and Pitts. In this classic model, an important simplification happens in the way inputs to neuron are modeled: all synaptic connections terminate directly at the neuron’s soma. In fact, the vast majority of synapses in the central nervous system terminate at the neuron’s dendritic tree, the most noticeable morphological structure of the neuron cell. Mimicking biological neurons by focusing on the excitatory/inhibitory decoding performed by the dendritic trees is a different and attractive alternative to the integrate-and-fire McCullogh-Pitts neuron stylisation. It is now more than 60 years that Random Access Memory (RAM) nodes can play the role of artificial neurons that are addressed by Boolean inputs and produce Boolean outputs. The weightless neural network (WNN) approach has an implicit inspiration in the decoding process observed in the dendritic trees of biological neurons. An overview on recent theoretical advances and applications of weightless neural systems, in classification, clustering, regression, etc, is presented here.</p><br> <p><b>Short Bio:</b><br>Felipe França is Electronics Engineer from Universidade Federal do Rio de Janeiro (1982), M.Sc. in Computer Science from Universidade Federal do Rio de Janeiro (1987) and Ph.D. in Neural Systems Engineering from Imperial College of Science Technology And Medicine (1994). He is an Invited Full Professor at the Systems Engineering and Computer Science Program, COPPE, Universidade Federal do Rio de Janeiro. He has published over 200 scientific papers and 2 granted patents. He has experience in Computer Science and Electronics Engineering, acting on the following subjects: artificial neural networks, weightless neural networks, computer architecture, asynchronous digital circuits, cryptographic circuits, dataflow computing, distributed algorithms, collective robotics, and intelligent transportation systems.</p><br> <p>Session Chair: Dr. Mateus Grellert</p><br> </div> <div class="col-lg-3"><img src='images/palestrantes/felipefranca.jpg' class='img-responsive' style='width:150px'> </div></div></div></section><section id="scroll23" style="margin-bottom: 50px;">
-          <div class="container">
-          <div class="row">
-          <div class="col-lg-9"><h3> <span style="color:#39C0F0">Eby G. Friedman - University of Rochester, USA</span> <br>Distributed On-Chip Power Delivery for Heterogeneous Nanoscale Integrated Systems</h3> <p><b>Abstract:</b><br>The focus of this presentation is on the fundamental challenges in delivering power to high speed, high complexity, heterogeneous integrated circuits. The efficient generation and distribution of multiple on-chip power supplies require fundamental changes to the power delivery process to provide increased, current to next-generation nanoscale heterogeneous integrated systems.
-The delivery of high quality power to the on-chip circuitry with minimal energy loss is a fundamental objective of all modern integrated circuits. To supply sufficient on-chip power, a higher unregulated DC voltage is usually stepped down and regulated within the power delivery system. Power conversion and regulation resources should be efficiently managed to supply high quality power with minimal energy losses across multiple on-chip power domains. The design complexity of a power delivery system increases with greater requirements on the quality of the power supply, limitations of the passive elements, increasing board and package parasitic impedances, and limited number of I/O pins. To satisfy challenging power efficiency and regulation requirements, hundreds of power regulators should be co-designed with the many thousands of decoupling capacitors, distributing the power locally to many billions of on-chip loads.
-Four primary components are required to realize an efficient on-chip power delivery system: (a) ultra-small voltage converters to generate power close to the load, (b) accurate models to characterize the individual power components, (c) efficient algorithms to manage the quality of the power delivered to the load circuits, and (d) a co-design methodology to simultaneously determine the optimal location of the on-chip power supplies and decoupling capacitors.
-Several regulators as a point-of-load power supply for next generation heterogeneous systems are described. The area of these circuits is significantly smaller than conventional voltage regulators, while maintaining high current efficiency. The proposed circuits provide an adaptive means for distributing multiple local power supplies across an integrated circuit. Another important challenge in the realization of effective power delivery systems is the analysis of highly complex mesh structured power grids where individual voltage fluctuations at billions of nodes need to be efficiently and accurately determined. Closed-form expressions for the effective resistance between these nodes will be described. This effective resistance model is utilized in the development of a non-iterative analysis algorithm to compute the node voltages. This algorithm drastically lowers computational complexity to determine IR drop and L di/dt noise.
-With the introduction of ultra-small on-chip voltage regulators, design methodologies are needed to determine the location of the on-chip power supplies and decoupling capacitors. A codesign methodology is presented to simultaneously determine the optimal location of the power supplies and decoupling capacitors within high performance power delivery networks. The effects of the size, number, and location of the power supplies and decoupling capacitors on the power noise are also discussed.
-These circuits, algorithms, and design methods will fundamentally change the manner in which power is delivered on-chip, producing a more efficient methodology for generating, distributing, and managing power to the many billions of devices within a high performance heterogeneous integrated system.</p><br> <p><b>Short Bio:</b><br>Dr. Friedman received the B.S. degree from Lafayette College in 1979, and the M.S. and Ph.D. degrees from the University of California, Irvine, in 1981 and 1989, respectively, all in electrical engineering. From 1979 to 1991, he was with Hughes Aircraft Company, rising to the position of manager of the Signal Processing Design and Test Department, responsible for the design and test of high-performance digital and analog integrated circuits. He has been with the ECE department at the University of Rochester since 1991, where he is a Distinguished Professor and the Director of the High-Performance VLSI/IC Design and Analysis Laboratory. He is also a Visiting Professor at the Technion – Israel Institute of Technology. He is the author of more than 500 papers and book chapters, 23 patents, and the author or editor of 19 books in the fields of high speed and low power CMOS design techniques, superconductive circuits, 3-D integration, high speed interconnect, and the theory and application of synchronous clock and power delivery and management. Dr. Friedman was previously the Editor-in-Chief and Chair of the Steering Committee of the IEEE Transactions on Very Large Scale Integration (VLSI) Systems, Editor-in-Chief of the Microelectronics Journal, Regional Editor of the Journal of Circuits, Systems and Computers, and a Member of the editorial board of several journals including the Proceedings of the IEEE. He is also a recipient of the IEEE Circuits and Systems Charles A. Desoer Technical Achievement Award and the IEEE CAS Mac Van Valkenburg Award, a University of Rochester Graduate Teaching Award, and a College of Engineering Teaching Excellence Award. Dr. Friedman is an inaugural member of the UC Irvine Engineering Hall of Fame, a Senior Fulbright Fellow, and an IEEE Fellow.</p><br> <p>Session Chair: Dr. Ricardo Reis (UFRGS)</p><br> </div> <div class="col-lg-3"><img src='images/palestrantes/eby.jpg' class='img-responsive' style='width:150px'> </div></div></div></section><section id="scroll25" style="margin-bottom: 50px;">
-          <div class="container">
-          <div class="row">
-          <div class="col-lg-9"><h3> <span style="color:#39C0F0">Jorge Tonfat - Space Research Institute of the Austrian Academy of Sciences</span> <br>FPGA Space Applications</h3> <p><b>Abstract:</b><br>FPGAs are widely used in space applications. They are used for different tasks in a satellite. This presentation shows an overview of FPGA's usage for space applications. It is presented the FPGA technologies available today for space applications. In particular, the presentation focuses on the Austrian Space Research Institute (OEAW/IWF) contribution to the ESA PLATO and SMILE missions.</p><br> <p><b>Short Bio:</b><br>Jorge Tonfat is a post-doctoral researcher at the Space Research Institute of the Austrian Academy of Sciences (IWF/OEAW).
-He works on PLATO and SMILE missions of the European Space Agency (ESA).
-He received the electronic engineer degree from Pontificia Universidad Católica del Perú in 2008,
-the master and PhD degree in Microelectronics from UFRGS, Brazil in 2011 and 2015, respectively.
-His research interests include soft error mitigation techniques and radiation effects on FPGAs.</p><br> <p>Session Chair: Dra. Alexandra Zimpeck (UCPel)</p><br> </div> <div class="col-lg-3"><img src='images/palestrantes/jorge_tonfat.jpg' class='img-responsive' style='width:150px'> </div></div></div></section><section id="scroll27" style="margin-bottom: 50px;">
-          <div class="container">
-          <div class="row">
-          <div class="col-lg-9"><h3> <span style="color:#39C0F0">Arjuna Madanayake - Florida International University, USA</span> <br>An Emerging Age of Analog-Accelerated Computing</h3> <p><b>Abstract:</b><br>Analog Computers are experiencing a come-back with lots of interest from the AI community through modern concepts such as in-memory computing and spiking neural networks. We will, however, stray from the well beaten path of analog-AI. We explore integrated-circuit (IC) based analog computers for radio-frequency (RF) computation of partial differential equation (PDE) systems aimed at computationally expensive classical physics problems. Unlike AI problems, which mostly reduce to matrix-vector multiplications followed by nonlinear functions, the solution of various types of linear and nonlinear PDE systems relevant for classical physics simulations pose challenging problems for the analog computer architect. We explore algorithms aimed at solving a particular class of linear PDE system encountered in computational electromagnetics. The derivation starts from Maxwell’s equations, which describe the behavior of linear electromagnetics at any frequency, and lead to two classes of analog computers that compute Maxwell’s equations in a spatio-temporal grid. We provide examples of real-world analog-CMOS chip implementations of both discrete-time (switched capacitor) and continuous-time solvers using some of the fastest and most energy efficient analog computers ICs ever designed. Our early prototype analog CMOS computer chip was fabricated using TSMC 180nm CMOS technology, and shows more than 400x speed improvement at 1000x less power compared to state-of-art GPU implementations of an electromagnetic wave-equation model. We hasten to add that these massive gains come at the cost of losing the advantages of programmability and ease of use for which  GPUs are quite popular, not to mention real challenges with thermal noise, distortion, and need for precise calibration of analog compute units; after all, there is no such thing as a free lunch!  Nevertheless, measured results from our CMOS chip seem to validate the hypothesis that specialized analog computers can be both fast, accurate, and energy efficient at certain types of computational problems relevant to physics simulations. The talk ends with a brief discussion of ongoing work on analog CMOS computers for highly-nonlinear PDEs that describe acoustic pressure waves. The work is sponsored  by the Defense Sciences Office (DSO) of the Defense Advanced Research Projects Agency (DARPA) through a subcontract from Ocius Technologies.</p><br> <p><b>Short Bio:</b><br>Dr. Arjuna Madanayake is an Associate Professor of Electrical and Computer Engineering at Florida International University (FIU) located in Miami, Florida, USA. He completed his Ph.D at University of Calgary, Canada, and B.Sc. (Engineering) - with first class honours - at University of Moratuwa, Sri Lanka. His research interests are in wireless communications, radar, mm-wave array processing, circuit theory, 5G/6G topics, digital VLSI, approximate computing, fast algorithms, beamforming, image and video compression, AI architectures for 6G intelligence, multidimensional signal processing, circuits and systems, analog computing, RF digital signal processing and FPGA based system design. His research program has been supported by multiple awards from DARPA, Office of Naval Research, NASA, National Science Foundation (NSF) and private industry.</p><br> <p>Session Chair: Dr. Sandro Binsfeld Ferreira (Unisinos)</p><br> </div> <div class="col-lg-3"><img src='images/palestrantes/arjuna.jpg' class='img-responsive' style='width:150px'> </div></div></div></section><section id="scroll31" style="margin-bottom: 50px;">
-            <div class="container">
-            <div class="row">
-            <div class="col-lg-9"><h3> <span style="color:#39C0F0">Yibo Fan - Fudan University, China</span> <br>XK265: An open source video codec IP core</h3> <p><b>Abstract:</b><br>Video Codec, image signal processor (ISP) is the most important IP core for visual IC design, and it involves a lot of algorithm research and hardware architecture optimization. In particular, video codec is a key field for international standard organizations to promote the development of the industry, with huge potential technological barriers and commercial value. This speech mainly involves the following aspects: 1. Introduction to VIP Laboratory of Fudan University and XK Silicon which aims to promote open source IP technology; 2. Video codec research introduction; 3. XK265 hardware architecture for agile design; 4. Performance evaluation of X1 and K1 IP cores; 5. Open source roadmap and future research.</p><br> <p><b>Short Bio:</b><br>Yibo Fan is a full Professor with the College of Microelectronics, Fudan University. His research interests include image processing, video coding, machine learning and associated VLSI architecture and open source IP core design. He founded the first open source IC design website（www.openasic.org）in china, and released the first open source H.265/HEVC video encoder IP core (XK265) and H.264/AVC video encoder IP core (XK264).</p><br> <p>Session Chair: Dr. Gustavo Sanchez (IFFar)</p><br> </div> <div class="col-lg-3"><img src='images/palestrantes/yibofan.jpg' class='img-responsive' style='width:150px'> </div></div></div></section><section id="scroll33" style="margin-bottom: 50px;">
-            <div class="container">
-            <div class="row">
-            <div class="col-lg-9"><h3> <span style="color:#39C0F0">Helmut Graeb - TU Munich, Germany</span> <br>Circuit-Level Yield Analysis and Optimization – The Deterministic Way</h3> <p><b>Abstract:</b><br>The talk will present a deterministic point of view on yield analysis and optimization on transistor level. The presented approach is applicable to any technical problem, where simulation is used to map a set of parameters onto a set of performance feature and where simulation is expensive. This requires careful optimization with minimum number of simulations. Instead of circuit macromodeling or response surface modeling for performance evaluation, the approach works immediately on simulation. Instead of statistical methods like Monte-Carlo, a deterministic approach is presented for the yield analysis. The approach is based on the principle of “point of highest probability (density) to violate the specification”. It will be illustrated with an analog circuit example.</p><br> <p><b>Short Bio:</b><br>Helmut Graeb received the Dipl.-Ing., Dr.-Ing., and Habilitation degrees in electrical engineering from the Technical University of Munich (TUM), Munich, Germany, in 1986, 1993,and 2008, respectively. He was with Siemens Corporation, Munich, from 1986 to 1987, where he was involved in the design of DRAMs. Since 1987, he has been with the Chair of Electronic Design Automation, TUM, where he has been the Head of a research group since 1993. His research interest is in design automation for analog/mixed-signal circuits. He has published more than 200 papers, six of which were nominated for best papers at DAC, ICCAD and DATE conferences. Dr. Graeb was a recipient of the 2008 Prize of the Information Technology Society (ITG), the 2004 Best Teaching Award of the TUM EE Faculty Students Association, the 2020 Best Teaching Award and the 2021 Best Doctoral Advisor Award of the Department of ECE at TUM, and the Third Prize of the 1996 Munich Business Plan Contest. He has served as the Vice-President Publications of the IEEE Council on Electronic Design Automation, as an Executive Committee Member of ICCAD, as a member or Chair of the Analog Program Subcommittees of ICCAD, DAC, and DATE, an Associate Editor of IEEE TCAS-II and of TCAD, and as a member of the Technical Advisory Board of MunEDA GmbH Munich, which he co-founded. He is a Fellow of the IEEE and member of VDE ITG and VDE/VDI-Society Microelectronics, Microsystems, and Precision Engineering.</p><br> <p>Session Chair: Dr. Alessandro Girardi (UNIPAMPA)</p><br> </div> <div class="col-lg-3"><img src='images/palestrantes/graeb.jpg' class='img-responsive' style='width:150px'> </div></div></div></section>      <!-- What we do Section -->
-  <div id="section_header">
-    <div id="main-services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 centered">
-            <h1>Organization</h1>
-            <center>
-              <table class="text-center">
-                <tbody>
-                  <tr>
-                    <td><b>General Chairs:</b> </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="http://lattes.cnpq.br/" target="_blank">
-                        Calebe Conceição (IFSUL)
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="https://gppaim.wordpress.com/" target="_blank">
-                        Leonardo Soares (IFRS)
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><b>CASSW Program Chairs:</b> </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="http://lattes.cnpq.br/" target="_blank">
-                        Daniel Palomino (UFPEL)
-                      </a>
-                      <br>
-                      <a href="http://lattes.cnpq.br/" target="_blank">
-                        Paulo Aguirre (Unipampa)
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                  <tr>
-                    <td><b>YPW Program Chairs:</b> </td>
-                  </tr>
-                  <tr>
-                    <td><a href="http://lattes.cnpq.br/" target="_blank">
-                        Ismael Seidel (UFSC)
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><b>Poster Session Chair:</b> </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="http://lattes.cnpq.br/6944075685926454" target="_blank">
-                        Geancarlo Abich (UNISC)
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
 
-                    <td><b>Finance Chair:</b> </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="http://lattes.cnpq.br/" target="_blank">
-                        Claudio Diniz (UFRGS)
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><b>Streaming Chair:
-                      </b> </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="http://lattes.cnpq.br/" target="_blank">
-                        José Azambuja (UFRGS)
-                      </a>
-                      <br>
-                      <a href="http://lattes.cnpq.br/" target="_blank">
-                        Raphael Brum (UFRGS)
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><b>CAS Society Liason:
-                      </b> </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="http://lattes.cnpq.br/4585719152284650" target="_blank">
-                        Ricardo Reis (UFRGS)
-                      </a>
-                      <br> <br>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </center>
-          </div>
-          <div class="col-lg-4 centered"></i>
-            <h1>Past Events</h1>
-            <a target="_blank" href="http://www.inf.ufrgs.br/cassw/cassw2008/">IEEE CASS Workshop 2008</a>
-            <br />
-            <a target="_blank" href="http://www.inf.ufrgs.br/cassw/cassw2011/">IEEE CASS Workshop 2011</a>
-            <br />
-            <a target="_blank" href="http://www.inf.ufrgs.br/cassw/cassw2012/">IEEE CASS Workshop 2012</a>
-            <br />
-            <a target="_blank" href="http://www.inf.ufrgs.br/cassw/cassw2013/">IEEE CASS Workshop 2013</a>
-            <br />
-            <a target="_blank" href="http://www.inf.ufrgs.br/cassw/cassw2015/">IEEE CASS Workshop 2015</a>
-            <br />
-            <a target="_blank" href="http://www.inf.ufrgs.br/cassw/cassw2016/">IEEE CASS Workshop 2016</a>
-            <br />
-            <a target="_blank" href="http://www.inf.ufrgs.br/cassw/cassw2017/">IEEE CASS Workshop 2017</a>
-            <br/>
-            <a target="_blank" href="http://www.inf.ufrgs.br/cassw/cassw2018/">IEEE CASS Workshop 2018</a>
-            <br/>
-            <a target="_blank" href="https://www.ufrgs.br/cassw/cassw2019/">IEEE CASS Workshop 2019</a>
-            <br/>
-            <a target="_blank" href="https://www.ufrgs.br/cassw/cassw2020/">IEEE CASS Workshop 2020</a>
-          </div>
-          <div class="col-lg-4 centered"> </i>
-            <h1>Contact</h1>
-            <div>
-              <span class="quad2" style="color:blue"> cassw.rs@gmail.com </span><br />
-              Universidade Federal do Rio Grande do Sul<br />
-              Instituto de Informática<br />
-              Av. Bento Gonçalves, 9500<br />
-              90650-001 - Porto Alegre, RS - Brazil<br />
-              <br></div>
-          </div>
-        </div>
-      </div>
-      <!-- Footer -->
-      <div id="footerwrap">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <span class="copyright">Copyright &copy; 2022 IEEE CASS RS Workshop 2022.</span>
+
+        <!-- What e do Section -->
+        <!-- About Section -->
+        <br>
+        <hr>
+        <hr>
+        <br>
+        <section id="scroll2" style="margin-bottom: 50px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9">
+                <h3> <span style="color:#39C0F0">Felipe Rosa - ARM, UK</span> <br>Using Virtual Platforms accelerate
+                  research and software development</h3>
+                <p><b>Abstract:</b><br>Virtual platforms provide full-system emulation of hardware components and
+                  running at speeds comparable to the actual hardware. Thus, virtual platforms users can develop
+                  software or firmware flexibly, without a hardware target, and with deployment quality. The performance
+                  and the flexibility originate from just-in-time translation engines and high-level models (i.e.,
+                  programmer's view). Consequently, microarchitectural components are largely abstracted or simplified.
+                  In this circumstance, understanding the trade-offs of virtual platforms is just as important as
+                  creating your applications or experiments. By carefully studying the target problem, it's possible to
+                  speed up investigations in several orders of magnitude without losing the correlation with actual
+                  hardware execution.
+                  I try to leverage my eight years of working with virtual platforms through several different projects
+                  in this talk to explain trade-offs and use cases.</p><br>
+                <p><b>Short Bio:</b><br>Felipe was born in Porto Alegre in the southernmost Brazilian state, Rio Grande
+                  do Sul. He holds a PhD in microelectronics and a Bachelor of Computer Engineering degree from the
+                  Federal University of Rio Grande do Sul (UFRGS). Felipe participated in the BRAFITEC, studying in the
+                  B.Eng., Microelectronic and Automation, July 2012 to July 2013, at Ecole Polytechnique Universitaire
+                  de Montpellier. In parallel, He was an undergraduate research intern at the Laboratoire
+                  d'Informatique, de Robotique et de Microélectronique de Montpellier. In 2015, he was accepted to a
+                  one-year exchange at the University of Leicester at the post-graduate level (Engineering Departement).
+                  He researched the reliability of many-core embedded systems using virtual platforms. Additionally,
+                  during this period, he worked as Software Engineer at Imperas Software Ltd, incorporating performance
+                  estimation tools in its commercial engine. Felipe is currently a senior modelling engineer at Arm
+                  Cambridge, UK. His main work project includes system interconnections (e.g., CMN600, CI700) and
+                  platform integration such as Total Compute FVP.</p><br>
+                <p>Session Chair: Dr. Leandro M. G. Rocha (IFRS)</p><br>
+              </div>
+              <div class="col-lg-3"><img src='images/palestrantes/felipe_rosa.jpg' class='img-responsive'
+                  style='width:150px'> </div>
             </div>
           </div>
+        </section>
+        <section id="scroll4" style="margin-bottom: 50px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9">
+                <h3> <span style="color:#39C0F0">Hussam Amrouch - University of Stuttgart, Germany</span> <br>Fighting
+                  Temperature: The Unseen Enemy for Neural Processing Units</h3>
+                <p><b>Abstract:</b><br>Neural processing units (NPUs) are becoming an integral part in all modern
+                  computing systems due to their substantial role in accelerating neural networks. In this talk, we will
+                  discuss the thermal challenges that NPUs bring, demonstrating how multiply-accumulate (MAC) arrays,
+                  which form the heart of any NPU, impose serious thermal bottlenecks to any on-chip systems due to
+                  their excessive power densities. We will also discuss how elevated temperatures severely degrade the
+                  reliability of on-chip memories, especially when it comes to emerging non-volatile memories, leading
+                  to bit errors in the neural network parameters (e.g., weights, activations, etc.). In this talk, we
+                  will also discuss: 1) the effectiveness of precision scaling and frequency scaling (FS) in temperature
+                  reductions for NPUs and 2) how advanced on-chip cooling using superlattice thin-film thermoelectric
+                  (TE) open doors for new tradeoffs between temperature, throughput, cooling cost, and inference
+                  accuracy in NPU chips.</p><br>
+                <p><b>Short Bio:</b><br> Dr. Hussam Amrouch is a Junior Professor at the University of Stuttgart heading
+                  the Chair of Semiconductor Test and Reliability (STAR) as well as a Research Group Leader at the
+                  Karlsruhe Institute of Technology (KIT), Germany. He earned in 06.2015 his Ph.D. degree in Computer
+                  Science (Dr.-Ing.) from KIT, Germany with distinction (summa cum laude). After which, he has founded
+                  and led the “Dependable Hardware” research group at KIT. Dr. Amrouch has published so far 135+
+                  multidisciplinary publications, including 52 journals, covering several major research areas across
+                  the computing stack (semiconductor physics, circuit design, computer architecture, and computer-aided
+                  design). His key research interests are emerging nanotechnologies and machine learning for CAD. Dr.
+                  Amrouch currently serves as Associate Editor in Integration, the VLSI Journal as well as a guest and
+                  reviewer Editor in Frontiers in Neuroscience.</p><br>
+                <p>Session Chair: Dr. Sergio Bampi (UFRGS)</p><br>
+              </div>
+              <div class="col-lg-3"><img src='images/palestrantes/amrouch.jpg' class='img-responsive'
+                  style='width:150px'> </div>
+            </div>
+          </div>
+        </section>
+        <section id="scroll6" style="margin-bottom: 50px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9">
+                <h3> <span style="color:#39C0F0">Jorge Castro-Godínez - Tecnológico de Costa Rica, Costa Rica</span>
+                  <br>Accuracy for Energy? Approximate Computing to the Rescue. A Brief Journey through the Promises and
+                  Progress of this Design Paradigm
+                </h3>
+                <p><b>Abstract:</b><br>The need for energy efficiency across the entire computing spectrum, from the
+                  Internet-of-Things to the High-Performance Computing, is motivating the emergence of newer devices,
+                  architectures, and design techniques. In the last decade, approximate computing has appeared as a
+                  design paradigm for applications that present an inherent tolerance to errors in their computations.
+                  By reducing the accuracy of the results, energy savings can be achieved in many modern applications,
+                  from image and video processing to machine learning and scientific computing. In this presentation, we
+                  will briefly walk through the fundamentals of this paradigm and we will explore some of its promises
+                  and progress achieved so far.</p><br>
+                <p><b>Short Bio:</b><br>Dr.-Ing. Jorge Castro-Godínez is currently an Assistant Professor at the School
+                  of Electronics Engineering, Costa Rica Institute of Technology. He was a scientist and PhD student at
+                  the Chair for Embedded Systems, Karlsruhe Institute of Technology, under the direction of Prof. Dr.
+                  Jörg Henkel, between 2015 and 2020. He received his Licenciatura (5-year engineering degree) and M.Sc.
+                  in Electronics Engineering from the Costa Rica Institute of Technology, in 2011 and 2014,
+                  respectively. Prior, he worked as Embedded Systems Engineer at Canam-Technology Inc (2010-2012). He
+                  was also a Research Assistant at the Signal and Image Processing Lab, Costa Rica Institute of
+                  Technology, and took part in an industry-joint research and development project with Bounce Imaging
+                  (2012-2014). His primary research interest is in energy-efficient computing across the different
+                  abstraction layers, with a particular interest on approximate computing and machine learning on edge
+                  computing.</p><br>
+                <p>Session Chair: Dr. Leonardo B. Soares (IFRS)</p><br>
+              </div>
+              <div class="col-lg-3"><img src='images/palestrantes/jorge_castro.jpg' class='img-responsive'
+                  style='width:150px'> </div>
+            </div>
+          </div>
+        </section>
+        <section id="scroll8" style="margin-bottom: 50px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9">
+                <h3> <span style="color:#39C0F0">Jimmy Tarrillo - Universidad de Ingeniería y Tecnología, Peru</span>
+                  <br>Development of critical embedded systems for Andean areas applications
+                </h3>
+                <p><b>Abstract:</b><br>The development of embedded systems for applications in remote Andean areas
+                  presents special challenges. For example, the difficulty of access, the effects of non-ionizing
+                  radiation, and the lack of a power grid make the design and construction of such systems consider the
+                  use of fault tolerance and low power consumption techniques. This presentation shows some critical
+                  embedded systems projects aimed to work in remote areas of the Andes developed by undergraduate
+                  students.</p><br>
+                <p><b>Short Bio:</b><br>Dr. Jimmy Tarrillo is a professor at the Electrical Engineering department of
+                  Universidad de Ingenieria y Tecnologia (Peru). He received the Electrical Engineer degree from
+                  Pontificia Universidad Catolica del Peru (Peru) in 2002, the Master degree in Electrical Engineering
+                  from Pontificia Universidade Católica do Rio Grande do Sul (Brazil) in 2009, and Ph.D. degree in
+                  Computer Science from Federal University of Rio Grande do Sul (Brazil) in 2014. Additionally, he
+                  worked at Antwerp Space (Belgium) developing a soft error injector platform for SRAM- FPGAs. His
+                  research interests include embedded systems, soft error mitigation techniques, and low power
+                  consumption on FPGAs.</p><br>
+                <p>Session Chair: Dra. Fernanda Kastensmidt (UFRGS)</p><br>
+              </div>
+              <div class="col-lg-3"><img src='images/palestrantes/jimmy.jpg' class='img-responsive' style='width:150px'>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="scroll21" style="margin-bottom: 50px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9">
+                <h3> <span style="color:#39C0F0">Felipe França - Universidade Federal do Rio de Janeiro, Brazil</span>
+                  <br>Weightless Neural Networks: LOOK MUM! NO WEIGHTS!
+                </h3>
+                <p><b>Abstract:</b><br>Mainstream artificial neural network models are based on
+                  weighted-sum-and-threshold artificial neurons, as the pioneering Threshold Logic Unit, of McCullogh
+                  and Pitts. In this classic model, an important simplification happens in the way inputs to neuron are
+                  modeled: all synaptic connections terminate directly at the neuron’s soma. In fact, the vast majority
+                  of synapses in the central nervous system terminate at the neuron’s dendritic tree, the most
+                  noticeable morphological structure of the neuron cell. Mimicking biological neurons by focusing on the
+                  excitatory/inhibitory decoding performed by the dendritic trees is a different and attractive
+                  alternative to the integrate-and-fire McCullogh-Pitts neuron stylisation. It is now more than 60 years
+                  that Random Access Memory (RAM) nodes can play the role of artificial neurons that are addressed by
+                  Boolean inputs and produce Boolean outputs. The weightless neural network (WNN) approach has an
+                  implicit inspiration in the decoding process observed in the dendritic trees of biological neurons. An
+                  overview on recent theoretical advances and applications of weightless neural systems, in
+                  classification, clustering, regression, etc, is presented here.</p><br>
+                <p><b>Short Bio:</b><br>Felipe França is Electronics Engineer from Universidade Federal do Rio de
+                  Janeiro (1982), M.Sc. in Computer Science from Universidade Federal do Rio de Janeiro (1987) and Ph.D.
+                  in Neural Systems Engineering from Imperial College of Science Technology And Medicine (1994). He is
+                  an Invited Full Professor at the Systems Engineering and Computer Science Program, COPPE, Universidade
+                  Federal do Rio de Janeiro. He has published over 200 scientific papers and 2 granted patents. He has
+                  experience in Computer Science and Electronics Engineering, acting on the following subjects:
+                  artificial neural networks, weightless neural networks, computer architecture, asynchronous digital
+                  circuits, cryptographic circuits, dataflow computing, distributed algorithms, collective robotics, and
+                  intelligent transportation systems.</p><br>
+                <p>Session Chair: Dr. Mateus Grellert</p><br>
+              </div>
+              <div class="col-lg-3"><img src='images/palestrantes/felipefranca.jpg' class='img-responsive'
+                  style='width:150px'> </div>
+            </div>
+          </div>
+        </section>
+        <section id="scroll23" style="margin-bottom: 50px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9">
+                <h3> <span style="color:#39C0F0">Eby G. Friedman - University of Rochester, USA</span> <br>Distributed
+                  On-Chip Power Delivery for Heterogeneous Nanoscale Integrated Systems</h3>
+                <p><b>Abstract:</b><br>The focus of this presentation is on the fundamental challenges in delivering
+                  power to high speed, high complexity, heterogeneous integrated circuits. The efficient generation and
+                  distribution of multiple on-chip power supplies require fundamental changes to the power delivery
+                  process to provide increased, current to next-generation nanoscale heterogeneous integrated systems.
+                  The delivery of high quality power to the on-chip circuitry with minimal energy loss is a fundamental
+                  objective of all modern integrated circuits. To supply sufficient on-chip power, a higher unregulated
+                  DC voltage is usually stepped down and regulated within the power delivery system. Power conversion
+                  and regulation resources should be efficiently managed to supply high quality power with minimal
+                  energy losses across multiple on-chip power domains. The design complexity of a power delivery system
+                  increases with greater requirements on the quality of the power supply, limitations of the passive
+                  elements, increasing board and package parasitic impedances, and limited number of I/O pins. To
+                  satisfy challenging power efficiency and regulation requirements, hundreds of power regulators should
+                  be co-designed with the many thousands of decoupling capacitors, distributing the power locally to
+                  many billions of on-chip loads.
+                  Four primary components are required to realize an efficient on-chip power delivery system: (a)
+                  ultra-small voltage converters to generate power close to the load, (b) accurate models to
+                  characterize the individual power components, (c) efficient algorithms to manage the quality of the
+                  power delivered to the load circuits, and (d) a co-design methodology to simultaneously determine the
+                  optimal location of the on-chip power supplies and decoupling capacitors.
+                  Several regulators as a point-of-load power supply for next generation heterogeneous systems are
+                  described. The area of these circuits is significantly smaller than conventional voltage regulators,
+                  while maintaining high current efficiency. The proposed circuits provide an adaptive means for
+                  distributing multiple local power supplies across an integrated circuit. Another important challenge
+                  in the realization of effective power delivery systems is the analysis of highly complex mesh
+                  structured power grids where individual voltage fluctuations at billions of nodes need to be
+                  efficiently and accurately determined. Closed-form expressions for the effective resistance between
+                  these nodes will be described. This effective resistance model is utilized in the development of a
+                  non-iterative analysis algorithm to compute the node voltages. This algorithm drastically lowers
+                  computational complexity to determine IR drop and L di/dt noise.
+                  With the introduction of ultra-small on-chip voltage regulators, design methodologies are needed to
+                  determine the location of the on-chip power supplies and decoupling capacitors. A codesign methodology
+                  is presented to simultaneously determine the optimal location of the power supplies and decoupling
+                  capacitors within high performance power delivery networks. The effects of the size, number, and
+                  location of the power supplies and decoupling capacitors on the power noise are also discussed.
+                  These circuits, algorithms, and design methods will fundamentally change the manner in which power is
+                  delivered on-chip, producing a more efficient methodology for generating, distributing, and managing
+                  power to the many billions of devices within a high performance heterogeneous integrated system.</p>
+                <br>
+                <p><b>Short Bio:</b><br>Dr. Friedman received the B.S. degree from Lafayette College in 1979, and the
+                  M.S. and Ph.D. degrees from the University of California, Irvine, in 1981 and 1989, respectively, all
+                  in electrical engineering. From 1979 to 1991, he was with Hughes Aircraft Company, rising to the
+                  position of manager of the Signal Processing Design and Test Department, responsible for the design
+                  and test of high-performance digital and analog integrated circuits. He has been with the ECE
+                  department at the University of Rochester since 1991, where he is a Distinguished Professor and the
+                  Director of the High-Performance VLSI/IC Design and Analysis Laboratory. He is also a Visiting
+                  Professor at the Technion – Israel Institute of Technology. He is the author of more than 500 papers
+                  and book chapters, 23 patents, and the author or editor of 19 books in the fields of high speed and
+                  low power CMOS design techniques, superconductive circuits, 3-D integration, high speed interconnect,
+                  and the theory and application of synchronous clock and power delivery and management. Dr. Friedman
+                  was previously the Editor-in-Chief and Chair of the Steering Committee of the IEEE Transactions on
+                  Very Large Scale Integration (VLSI) Systems, Editor-in-Chief of the Microelectronics Journal, Regional
+                  Editor of the Journal of Circuits, Systems and Computers, and a Member of the editorial board of
+                  several journals including the Proceedings of the IEEE. He is also a recipient of the IEEE Circuits
+                  and Systems Charles A. Desoer Technical Achievement Award and the IEEE CAS Mac Van Valkenburg Award, a
+                  University of Rochester Graduate Teaching Award, and a College of Engineering Teaching Excellence
+                  Award. Dr. Friedman is an inaugural member of the UC Irvine Engineering Hall of Fame, a Senior
+                  Fulbright Fellow, and an IEEE Fellow.</p><br>
+                <p>Session Chair: Dr. Ricardo Reis (UFRGS)</p><br>
+              </div>
+              <div class="col-lg-3"><img src='images/palestrantes/eby.jpg' class='img-responsive' style='width:150px'>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="scroll25" style="margin-bottom: 50px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9">
+                <h3> <span style="color:#39C0F0">Jorge Tonfat - Space Research Institute of the Austrian Academy of
+                    Sciences</span> <br>FPGA Space Applications</h3>
+                <p><b>Abstract:</b><br>FPGAs are widely used in space applications. They are used for different tasks in
+                  a satellite. This presentation shows an overview of FPGA's usage for space applications. It is
+                  presented the FPGA technologies available today for space applications. In particular, the
+                  presentation focuses on the Austrian Space Research Institute (OEAW/IWF) contribution to the ESA PLATO
+                  and SMILE missions.</p><br>
+                <p><b>Short Bio:</b><br>Jorge Tonfat is a post-doctoral researcher at the Space Research Institute of
+                  the Austrian Academy of Sciences (IWF/OEAW).
+                  He works on PLATO and SMILE missions of the European Space Agency (ESA).
+                  He received the electronic engineer degree from Pontificia Universidad Católica del Perú in 2008,
+                  the master and PhD degree in Microelectronics from UFRGS, Brazil in 2011 and 2015, respectively.
+                  His research interests include soft error mitigation techniques and radiation effects on FPGAs.</p>
+                <br>
+                <p>Session Chair: Dra. Alexandra Zimpeck (UCPel)</p><br>
+              </div>
+              <div class="col-lg-3"><img src='images/palestrantes/jorge_tonfat.jpg' class='img-responsive'
+                  style='width:150px'> </div>
+            </div>
+          </div>
+        </section>
+        <section id="scroll27" style="margin-bottom: 50px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9">
+                <h3> <span style="color:#39C0F0">Arjuna Madanayake - Florida International University, USA</span> <br>An
+                  Emerging Age of Analog-Accelerated Computing</h3>
+                <p><b>Abstract:</b><br>Analog Computers are experiencing a come-back with lots of interest from the AI
+                  community through modern concepts such as in-memory computing and spiking neural networks. We will,
+                  however, stray from the well beaten path of analog-AI. We explore integrated-circuit (IC) based analog
+                  computers for radio-frequency (RF) computation of partial differential equation (PDE) systems aimed at
+                  computationally expensive classical physics problems. Unlike AI problems, which mostly reduce to
+                  matrix-vector multiplications followed by nonlinear functions, the solution of various types of linear
+                  and nonlinear PDE systems relevant for classical physics simulations pose challenging problems for the
+                  analog computer architect. We explore algorithms aimed at solving a particular class of linear PDE
+                  system encountered in computational electromagnetics. The derivation starts from Maxwell’s equations,
+                  which describe the behavior of linear electromagnetics at any frequency, and lead to two classes of
+                  analog computers that compute Maxwell’s equations in a spatio-temporal grid. We provide examples of
+                  real-world analog-CMOS chip implementations of both discrete-time (switched capacitor) and
+                  continuous-time solvers using some of the fastest and most energy efficient analog computers ICs ever
+                  designed. Our early prototype analog CMOS computer chip was fabricated using TSMC 180nm CMOS
+                  technology, and shows more than 400x speed improvement at 1000x less power compared to state-of-art
+                  GPU implementations of an electromagnetic wave-equation model. We hasten to add that these massive
+                  gains come at the cost of losing the advantages of programmability and ease of use for which GPUs are
+                  quite popular, not to mention real challenges with thermal noise, distortion, and need for precise
+                  calibration of analog compute units; after all, there is no such thing as a free lunch! Nevertheless,
+                  measured results from our CMOS chip seem to validate the hypothesis that specialized analog computers
+                  can be both fast, accurate, and energy efficient at certain types of computational problems relevant
+                  to physics simulations. The talk ends with a brief discussion of ongoing work on analog CMOS computers
+                  for highly-nonlinear PDEs that describe acoustic pressure waves. The work is sponsored by the Defense
+                  Sciences Office (DSO) of the Defense Advanced Research Projects Agency (DARPA) through a subcontract
+                  from Ocius Technologies.</p><br>
+                <p><b>Short Bio:</b><br>Dr. Arjuna Madanayake is an Associate Professor of Electrical and Computer
+                  Engineering at Florida International University (FIU) located in Miami, Florida, USA. He completed his
+                  Ph.D at University of Calgary, Canada, and B.Sc. (Engineering) - with first class honours - at
+                  University of Moratuwa, Sri Lanka. His research interests are in wireless communications, radar,
+                  mm-wave array processing, circuit theory, 5G/6G topics, digital VLSI, approximate computing, fast
+                  algorithms, beamforming, image and video compression, AI architectures for 6G intelligence,
+                  multidimensional signal processing, circuits and systems, analog computing, RF digital signal
+                  processing and FPGA based system design. His research program has been supported by multiple awards
+                  from DARPA, Office of Naval Research, NASA, National Science Foundation (NSF) and private industry.
+                </p><br>
+                <p>Session Chair: Dr. Sandro Binsfeld Ferreira (Unisinos)</p><br>
+              </div>
+              <div class="col-lg-3"><img src='images/palestrantes/arjuna.jpg' class='img-responsive'
+                  style='width:150px'> </div>
+            </div>
+          </div>
+        </section>
+        <section id="scroll31" style="margin-bottom: 50px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9">
+                <h3> <span style="color:#39C0F0">Yibo Fan - Fudan University, China</span> <br>XK265: An open source
+                  video codec IP core</h3>
+                <p><b>Abstract:</b><br>Video Codec, image signal processor (ISP) is the most important IP core for
+                  visual IC design, and it involves a lot of algorithm research and hardware architecture optimization.
+                  In particular, video codec is a key field for international standard organizations to promote the
+                  development of the industry, with huge potential technological barriers and commercial value. This
+                  speech mainly involves the following aspects: 1. Introduction to VIP Laboratory of Fudan University
+                  and XK Silicon which aims to promote open source IP technology; 2. Video codec research introduction;
+                  3. XK265 hardware architecture for agile design; 4. Performance evaluation of X1 and K1 IP cores; 5.
+                  Open source roadmap and future research.</p><br>
+                <p><b>Short Bio:</b><br>Yibo Fan is a full Professor with the College of Microelectronics, Fudan
+                  University. His research interests include image processing, video coding, machine learning and
+                  associated VLSI architecture and open source IP core design. He founded the first open source IC
+                  design website（www.openasic.org）in china, and released the first open source H.265/HEVC video encoder
+                  IP core (XK265) and H.264/AVC video encoder IP core (XK264).</p><br>
+                <p>Session Chair: Dr. Gustavo Sanchez (IFFar)</p><br>
+              </div>
+              <div class="col-lg-3"><img src='images/palestrantes/yibofan.jpg' class='img-responsive'
+                  style='width:150px'> </div>
+            </div>
+          </div>
+        </section>
+        <section id="scroll33" style="margin-bottom: 50px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9">
+                <h3> <span style="color:#39C0F0">Helmut Graeb - TU Munich, Germany</span> <br>Circuit-Level Yield
+                  Analysis and Optimization – The Deterministic Way</h3>
+                <p><b>Abstract:</b><br>The talk will present a deterministic point of view on yield analysis and
+                  optimization on transistor level. The presented approach is applicable to any technical problem, where
+                  simulation is used to map a set of parameters onto a set of performance feature and where simulation
+                  is expensive. This requires careful optimization with minimum number of simulations. Instead of
+                  circuit macromodeling or response surface modeling for performance evaluation, the approach works
+                  immediately on simulation. Instead of statistical methods like Monte-Carlo, a deterministic approach
+                  is presented for the yield analysis. The approach is based on the principle of “point of highest
+                  probability (density) to violate the specification”. It will be illustrated with an analog circuit
+                  example.</p><br>
+                <p><b>Short Bio:</b><br>Helmut Graeb received the Dipl.-Ing., Dr.-Ing., and Habilitation degrees in
+                  electrical engineering from the Technical University of Munich (TUM), Munich, Germany, in 1986,
+                  1993,and 2008, respectively. He was with Siemens Corporation, Munich, from 1986 to 1987, where he was
+                  involved in the design of DRAMs. Since 1987, he has been with the Chair of Electronic Design
+                  Automation, TUM, where he has been the Head of a research group since 1993. His research interest is
+                  in design automation for analog/mixed-signal circuits. He has published more than 200 papers, six of
+                  which were nominated for best papers at DAC, ICCAD and DATE conferences. Dr. Graeb was a recipient of
+                  the 2008 Prize of the Information Technology Society (ITG), the 2004 Best Teaching Award of the TUM EE
+                  Faculty Students Association, the 2020 Best Teaching Award and the 2021 Best Doctoral Advisor Award of
+                  the Department of ECE at TUM, and the Third Prize of the 1996 Munich Business Plan Contest. He has
+                  served as the Vice-President Publications of the IEEE Council on Electronic Design Automation, as an
+                  Executive Committee Member of ICCAD, as a member or Chair of the Analog Program Subcommittees of
+                  ICCAD, DAC, and DATE, an Associate Editor of IEEE TCAS-II and of TCAD, and as a member of the
+                  Technical Advisory Board of MunEDA GmbH Munich, which he co-founded. He is a Fellow of the IEEE and
+                  member of VDE ITG and VDE/VDI-Society Microelectronics, Microsystems, and Precision Engineering.</p>
+                <br>
+                <p>Session Chair: Dr. Alessandro Girardi (UNIPAMPA)</p><br>
+              </div>
+              <div class="col-lg-3"><img src='images/palestrantes/graeb.jpg' class='img-responsive' style='width:150px'>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- What we do Section -->
+        <div id="section_header">
+          <div id="main-services">
+            <!--  Botton -->
+            <div w3-include-html="elements/botton.html"></div>
+            <!-- Footer -->
+            <div w3-include-html="elements/footer.html"></div>
+          </div>
         </div>
-      </div>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- Scrolling Nav JavaScript -->
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/scrolling-nav.js"></script>
+        <script>
+          includeHTML();
+        </script>
 </body>
+
 </html>
